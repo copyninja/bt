@@ -88,6 +88,22 @@ int main(int argc, char *argv[])
      printf("\n");
      benc_free(b);
 
+     // list test 4
+     in = "l4:spami-3e3:hame";
+     b = benc_decode(in);
+     assert(b->type == benc_list);
+     benc_print(b);
+     printf("\n");
+     benc_free(b);
+
+     // list test 5
+     in = "l4:spami-3ei10e3:hame";
+     b = benc_decode(in);
+     assert(b->type == benc_list);
+     benc_print(b);
+     printf("\n");
+     benc_free(b);
+
      // dict test 1 { "foo" : 42 }
      in = "d3:fooi42ee";
      b = benc_decode(in);
