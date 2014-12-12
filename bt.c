@@ -29,7 +29,7 @@ char *slurp(char *f)
 
 int main(int argc, char *argv[])
 {
-     char *f;
+     char *f = NULL;
      char *metainfo;
   
      ARGBEGIN{
@@ -43,4 +43,6 @@ int main(int argc, char *argv[])
 	  usage();
 	  exit(1);
      } ARGEND;
+
+     if (!f) free(f);
 }
