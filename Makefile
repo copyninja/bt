@@ -26,3 +26,4 @@ test: bencode-test
 
 leakcheck: bencode-test
 	valgrind --leak-check=yes ./bencode-test
+	valgrind --leak-check=yes ./bt
