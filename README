@@ -10,3 +10,6 @@ Status:
 
 + Implements the Bencode spec.
 <https://wiki.theory.org/BitTorrentSpecification#Bencoding>
+
+arg.h: This was originally part of the Plan9 system, adapted
+       by the good folks of the suckless project.
