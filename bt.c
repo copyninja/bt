@@ -37,6 +37,7 @@ int main(int argc, char *argv[])
 	  f = ARGF();
 	  metainfo = slurp(f);
 	  fprintf(stderr, "%s\n", metainfo);
+	  free(metainfo);
 	  break;
      case 'v':
      default:
