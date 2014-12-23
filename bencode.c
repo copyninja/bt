@@ -181,7 +181,7 @@ struct benc *benc_decode(char *in)
 {
      struct benc *b = (struct benc *)malloc(sizeof(struct benc));
 
-     if (strlen(in) < 1) {
+     if (b == NULL) {
 	  perror(strerror(errno));
 	  return NULL;
      }
